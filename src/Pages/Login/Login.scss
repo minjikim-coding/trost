@@ -1,0 +1,171 @@
+.login-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .login-box {
+    background-color: rgb(255, 255, 255);
+    min-width: 496px;
+    min-height: 700px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #9e9e9e7c;
+    box-shadow: 0.5px 0.5px 5px 1px #9e9e9e7c;
+    .login-logo {
+      width: 200px;
+      height: 78px;
+      margin: 88px auto 80px auto;
+      background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/logo.png)
+        no-repeat center;
+      background-size: 200px auto;
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 160px;
+    }
+    .login-btn-wrap {
+      position: absolute;
+      top: 270px;
+      display: flex;
+      flex-direction: column;
+      width: 432px;
+      height: 299px;
+      font-size: 16px;
+      cursor: default;
+      font-size: 14px;
+      text-decoration: none solid rgb(51, 51, 51);
+    }
+    .login-btn-kakao {
+      margin: 8px 56px 0;
+      padding: 0px;
+      width: 320px;
+      height: 56px;
+      font-size: 16px;
+      background-color: #ffec34;
+      word-spacing: 0px;
+      color: var(--black);
+      border-radius: 56px;
+      border: 0;
+      outline: 0;
+      position: relative;
+      &::before {
+        background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/popup_btn_kakao.png)
+          no-repeat center;
+        background-size: 24px auto;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: absolute;
+        left: 47px;
+        content: "";
+      }
+    }
+    .login-btn-facebook {
+      margin: 8px 56px 0;
+      padding: 0px;
+      width: 320px;
+      height: 56px;
+      font-size: 16px;
+      background-color: #3b5998;
+      word-spacing: 0px;
+      color: #ffffff;
+      border-radius: 56px;
+      border: 0;
+      outline: 0;
+      position: relative;
+      &::before {
+        background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/popup_btn_fb.png)
+          no-repeat center;
+        background-size: 24px auto;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: absolute;
+        left: 47px;
+        content: "";
+      }
+    }
+    .login-btn-naver {
+      margin: 8px 56px 0;
+      padding: 0px;
+      width: 320px;
+      height: 56px;
+      font-size: 16px;
+      background-color: #1ec800;
+      word-spacing: 0px;
+      color: #ffffff;
+      border-radius: 56px;
+      border: 0;
+      outline: 0;
+      position: relative;
+      &::before {
+        background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/popup_btn_naver.png)
+          no-repeat center;
+        background-size: 24px auto;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: absolute;
+        left: 47px;
+        content: "";
+      }
+    }
+
+    .login-btn-apple {
+      margin: 8px 56px 0;
+      padding: 0px;
+      width: 320px;
+      height: 56px;
+      font-size: 16px;
+      background-color: #ffffff;
+      word-spacing: 0px;
+      color: var(--black);
+      border-radius: 56px;
+      border: 1px solid #e0e0e0;
+      outline: 0;
+      position: relative;
+      &::before {
+        background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/popup_btn_apple.png)
+          no-repeat center;
+        background-size: 24px auto;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: absolute;
+        left: 47px;
+        content: "";
+      }
+    }
+    .login-email {
+      height: 19px;
+      margin: 32px 164px 0px;
+    }
+    .login-info {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 0;
+      padding: 16px 0 24px 0;
+      font-weight: 400;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+    .sign-link {
+      display: inline-block;
+      margin-left: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--themeColor);
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}

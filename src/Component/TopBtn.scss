@@ -1,0 +1,38 @@
+.btn-to-top-arrow {
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  right: 32px;
+  bottom: 104px;
+  background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_top.png")
+    no-repeat center;
+  background-size: 48px auto;
+  text-indent: -9999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-guide-floating {
+  z-index: 1;
+  width: 128px;
+  height: 48px;
+  position: fixed;
+  right: 32px;
+  bottom: 40px;
+  background: #f57c00;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 2px;
+  outline: none;
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    vertical-align: middle;
+    margin: 0 4px 2px 0;
+  }
+}

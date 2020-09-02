@@ -1,0 +1,292 @@
+{
+  "information": [
+    {
+      "name": "박철우",
+      "gender": "남자",
+      "level": "마스터 상담사",
+      "counsel_count": 1306,
+      "introduction": "갈등상황이나 힘들 때 나누어주세요",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/15065783075827_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.648255813953488
+      },
+      "review_count": 172
+    },
+    {
+      "name": "김효린",
+      "gender": "여자",
+      "level": "마스터 상담사",
+      "counsel_count": 1080,
+      "introduction": "완벽하지 않아서 더 사랑스러운거에요",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/15065782615741_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.569696969696969
+      },
+      "review_count": 165
+    },
+    {
+      "name": "변명숙",
+      "gender": "여자",
+      "level": "마스터 상담사",
+      "counsel_count": 424,
+      "introduction": "당신은 그 누구보다 잘 할 수 있어요",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/15065783925952_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.509615384615385
+      },
+      "review_count": 52
+    },
+    {
+      "name": "권효석",
+      "gender": "남자",
+      "level": "마스터 상담사",
+      "counsel_count": 1410,
+      "introduction": "함께 나누며 치유와  평화, 안식을",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/15065782575737_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.419786096256685
+      },
+      "review_count": 187
+    },
+    {
+      "name": "천세경",
+      "gender": "여자",
+      "level": "마스터 상담사",
+      "counsel_count": 1578,
+      "introduction": "오늘, '나'를 만나러 잘 오셨어요.",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/15065782115651_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.5691244239631335
+      },
+      "review_count": 217
+    },
+    {
+      "name": "김수한",
+      "gender": "여자",
+      "level": "마스터 상담사",
+      "counsel_count": 1117,
+      "introduction": "당신의 마음자리에 함께 하고싶습니다.",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/1548650937_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.946768060836502
+      },
+      "review_count": 263
+    },
+    {
+      "name": "임명숙",
+      "gender": "여자",
+      "level": "마스터 상담사",
+      "counsel_count": 884,
+      "introduction": "든든한 당신의 편이 되어 드릴게요. ",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/15065781245524_.png",
+      "prices": [
+        "40000.00",
+        "80000.00",
+        "152000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00",
+        "60000.00",
+        "120000.00",
+        "228000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.636904761904762
+      },
+      "review_count": 168
+    },
+    {
+      "name": "이경숙",
+      "gender": "여자",
+      "level": "일반 상담사",
+      "counsel_count": 87,
+      "introduction": "고통에서 벗어나 행복하기를...",
+      "is_cousel_count_gt_150": false,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/1576046516_.png",
+      "prices": [
+        "30000.00",
+        "60000.00",
+        "114000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.911764705882353
+      },
+      "review_count": 17
+    },
+    {
+      "name": "김한나",
+      "gender": "여자",
+      "level": "일반 상담사",
+      "counsel_count": 272,
+      "introduction": "그 무엇도 당신의 잘못이 아니에요.",
+      "is_cousel_count_gt_150": true,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/1550580755_.png",
+      "prices": [
+        "30000.00",
+        "60000.00",
+        "114000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.771428571428571
+      },
+      "review_count": 70
+    },
+    {
+      "name": "유성희",
+      "gender": "여자",
+      "level": "일반 상담사",
+      "counsel_count": 50,
+      "introduction": "당신의 아픔은 당신의 잘못이 아닙니다",
+      "is_cousel_count_gt_150": false,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/1554456894_.png",
+      "prices": [
+        "30000.00",
+        "60000.00",
+        "114000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.9
+      },
+      "review_count": 15
+    },
+    {
+      "name": "노희정",
+      "gender": "여자",
+      "level": "일반 상담사",
+      "counsel_count": 7,
+      "introduction": "소중한 당신에게 징검다리가 되겠습니다",
+      "is_cousel_count_gt_150": false,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/1583972403_.png",
+      "prices": [
+        "30000.00",
+        "60000.00",
+        "114000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00"
+      ],
+      "stars": {
+        "review__score__avg": 4.875
+      },
+      "review_count": 4
+    },
+    {
+      "name": "이승호",
+      "gender": "남자",
+      "level": "일반 상담사",
+      "counsel_count": 50,
+      "introduction": "힘들 때 함께하는 사람이고 싶습니다.",
+      "is_cousel_count_gt_150": false,
+      "profile_image_url": "https://d2qrvi4l1nprmf.cloudfront.net/images/partner/1585531352_.png",
+      "prices": [
+        "30000.00",
+        "60000.00",
+        "114000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00",
+        "45000.00",
+        "90000.00",
+        "171000.00"
+      ],
+      "stars": {
+        "review__score__avg": 5
+      },
+      "review_count": 16
+    }
+  ]
+}
