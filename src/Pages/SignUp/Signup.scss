@@ -1,0 +1,286 @@
+.signUp-email-content {
+  width: 992px;
+  height: 720px;
+  z-index: 1;
+  min-width: 496px;
+  min-height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 32px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  margin: 0px;
+  .signUp-input-wrap {
+    overflow: hidden;
+    .signUp-left {
+      display: inline-block;
+      width: 432px;
+      height: 363px;
+      margin-right: 64px;
+      vertical-align: middle;
+      .signUp-input-box-bottom-email {
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        width: 432px;
+        height: 40px;
+        color: #757575;
+        line-height: 1.2;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+      .signUp-input-box-bottom-passward {
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        line-height: 1;
+        width: 100%;
+        height: 20px;
+        color: #757575;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+      .signUp-input-box-bottom-passward-list {
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        width: 406px;
+        height: 20px;
+        color: #757575;
+        line-height: 1;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    .signUp-right {
+      display: inline-block;
+      width: 432px;
+      height: 363px;
+      vertical-align: middle;
+      .signUp-input-box-nickname {
+        float: left;
+        width: 344px;
+        height: 26px;
+        margin: 4px auto 8px auto;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 400;
+        border-bottom: 1px solid #9e9e9e;
+      }
+      .signUp-input-box-bottom-nickname {
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        width: 432px;
+        height: 40px;
+        color: #757575;
+        line-height: 1.43;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+      .signUp-input-box-bottom-nickname-list {
+        width: 432px;
+        height: 20px;
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        color: #757575;
+        line-height: 1.43;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+      .signUp-input-box-bottom-fitcode {
+        width: 432px;
+        height: 20px;
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        color: #757575;
+        line-height: 1.43;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+      .signUp-input-box-bottom-fitcode-list {
+        width: 432px;
+        height: 20px;
+        position: relative;
+        padding: 0 16px 0 11px;
+        font-size: 14px;
+        word-break: keep-all;
+        color: #757575;
+        line-height: 1.43;
+        &::before {
+          content: "*";
+          position: absolute;
+          left: 0;
+        }
+      }
+      .signUp-input-box-rebtn {
+        float: right;
+        width: 80px;
+        height: 32px;
+        border: 1px solid #fea45a;
+        color: #f57c00;
+        font-size: 14px;
+        border-radius: 32px;
+      }
+      .signUp-input-box-input {
+        width: 432px;
+        height: 26px;
+        margin: 4px 0px 8px 0px;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 400;
+        border-bottom: 1px solid #9e9e9e;
+      }
+    }
+    .signUp-input-box-btn-check {
+      float: right;
+      width: 80px;
+      height: 32px;
+      border: 1px solid #fea45a;
+      color: #f57c00;
+      font-size: 14px;
+      border-radius: 32px;
+    }
+  }
+  .signUp-bottom-checkbox {
+    display: flex;
+    padding-top: 56px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .signUp-main-btn {
+    display: block;
+    width: 320px;
+    height: 48px;
+    margin: 18px auto 0 auto;
+    background: #ffcc80;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+  .signUp-popup-info-txt {
+    position: absolute;
+    font-size: 14px;
+    width: 944px;
+    height: 62px;
+    left: 24px;
+    right: 24px;
+    bottom: 0;
+    padding: 16px 0 24px 0;
+    font-weight: 400;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    .signUp-popup-link-join {
+      display: inline-block;
+      margin-left: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #f57c00;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+    }
+  }
+
+  .signUp-input-box {
+    position: relative;
+    height: 61px;
+    margin-bottom: 60px;
+  }
+  .signUp-input-box-head {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+  }
+  .signUp-head {
+    margin: 8px 0 40px 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.21;
+  }
+  .signUp-style {
+    display: flex;
+    width: 432px;
+    overflow: hidden;
+  }
+  em {
+    font-style: normal;
+  }
+  .signUp-input-box-num {
+    border-bottom: 1px solid #f57c00;
+    width: 344px;
+    height: 26px;
+    padding: 0px;
+    margin: 4px 10px 8px 0px;
+  }
+  .signUp-input-box-input {
+    width: 432px;
+    height: 26px;
+    margin: 4px 10px 8px 0px;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+    border-bottom: 1px solid #9e9e9e;
+  }
+
+  button {
+    background-color: white;
+  }
+  input {
+    outline: 0px;
+    border: 0;
+  }
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+  }
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_check_oval.png)
+      no-repeat;
+    background-position: 0 center;
+    background-size: auto 24px;
+    cursor: pointer;
+    &:checked {
+      background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_check_oval.png)
+        no-repeat center;
+      background-position: -28px center;
+      background-size: auto 24px;
+    }
+  }
+}

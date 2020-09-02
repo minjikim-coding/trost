@@ -1,0 +1,115 @@
+.signIn-container {
+  z-index: 1;
+  min-width: 496px;
+  min-height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 32px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #9e9e9e7c;
+  box-shadow: 0.5px 0.5px 5px 1px #9e9e9e7c;
+  .signIn-head {
+    margin: 8px 0 40px 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.21;
+  }
+  .signIn-input-box {
+    position: relative;
+    margin-bottom: 60px;
+    label {
+      cursor: default;
+      .user-head {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.71;
+      }
+    }
+    .idinput {
+      width: 100%;
+      height: 26px;
+      margin: 4px auto 8px auto;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 400;
+      border-bottom: 1px solid #9e9e9e;
+      outline: 0;
+    }
+    .pwinput {
+      width: 100%;
+      height: 26px;
+      margin: 4px auto 8px auto;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 400;
+      border-bottom: 1px solid #9e9e9e;
+      outline: 0;
+    }
+  }
+  button {
+    background: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+  .main-btn-active {
+    display: block;
+    width: 320px;
+    height: 48px;
+    margin: 18px auto 0 auto;
+    background: --themeColor;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+  .login-info-txt {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: --themeColor;
+    font-size: 16px;
+    font-weight: 600;
+    .login-link-join-1 {
+      color: #f57c00;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .login-link-join-2 {
+      margin: 0 0 0 56px;
+      color: #f57c00;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .join-style-popup-close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/popup_btn_close.png)
+      no-repeat center;
+    background-size: 24px auto;
+    text-indent: -9999px;
+  }
+  em {
+    font-style: normal;
+  }
+  input {
+    border: 0;
+  }
+}
+

@@ -1,0 +1,1123 @@
+.PartnerProfile {
+  width: 960px;
+  margin: 0 auto;
+  padding: 32px 0 20px;
+  color: var(--black);
+  //nav 연결
+  position: relative;
+  top: 72px;
+
+  :focus {
+    outline: none;
+  }
+
+  button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  .partner-profile-nav {
+    height: 20px;
+    margin-bottom: 16px;
+
+    a {
+      text-decoration: none;
+      color: var(--lightBlack);
+    }
+
+    ul {
+      display: flex;
+      li {
+        font-size: 14px;
+
+        Link {
+          text-decoration: none;
+          color: var(--lightBlack);
+        }
+      }
+      :not(:last-of-type)::after {
+        content: ">";
+        margin: 0px 4px;
+        color: var(--lightBlack);
+      }
+    }
+  }
+
+  @mixin btn-guide($bg-position) {
+    width: 20px;
+    height: 20px;
+    margin: 1.9px 0 0 2px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_question.png")
+      no-repeat center;
+    background-size: auto 20px;
+    background-position: $bg-position;
+  }
+
+  @mixin price-list() {
+    margin-top: 8px;
+    font-size: 14px;
+
+    li {
+      margin-top: 4px;
+      width: 100%;
+      height: 48px;
+      border: 1px solid #e0e0e0;
+      cursor: pointer;
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      em {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @mixin act-list-img($bg-position) {
+    width: 72px;
+    height: 72px;
+    margin: 0 18px 7px;
+    text-indent: -9999px;
+    background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/badge_profile.png")
+      no-repeat;
+    background-size: auto 148px;
+    background-position: $bg-position;
+  }
+
+  @mixin act-list-text() {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  @mixin info-list($wrap-padding) {
+    padding: $wrap-padding;
+
+    .list-el {
+      position: relative;
+
+      &::before {
+        content: "·";
+        width: 27px;
+        position: absolute;
+        left: -27px;
+        text-align: center;
+      }
+
+      &.medal {
+        &::before {
+          content: "";
+          width: 27px;
+          height: 28px;
+          position: absolute;
+          left: -27px;
+          background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/ic_medal.png")
+            no-repeat center;
+          background-size: 27px auto;
+        }
+      }
+    }
+  }
+
+  @mixin counsel-flow($margin-r) {
+    width: 110px;
+    height: 140px;
+    margin-right: $margin-r;
+    position: relative;
+
+    .img-num {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .img-process {
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .text-process {
+      font-size: 16px;
+      line-height: 24px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+
+  .partner-profile-main {
+    display: flex;
+
+    .partner-profile-section {
+      margin-right: 40px;
+
+      .partner-profile-card-wrap {
+        margin-bottom: 40px;
+
+        .partner-profile-card {
+          width: 616px;
+          border: 1px solid #e0e0e0;
+          position: relative;
+
+          .btn-partner-profile-wish {
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            right: -2px;
+            top: -8px;
+            background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_heart32.png)
+              no-repeat center 24px;
+            background-size: 28px auto;
+            text-indent: -9999px;
+
+            // 찜하기 기능 추가
+            &.add-wish {
+              background: url(https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_heart32_.png)
+                no-repeat center 24px;
+              background-size: 32px auto;
+            }
+          }
+
+          .partner-profile-wrap-info {
+            width: 100%;
+            height: 153px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+
+            .partner-wrap-img {
+              padding: 16px 0px 0px 24px;
+
+              img {
+                width: 112px;
+                height: 112px;
+              }
+            }
+
+            .partner-wrap-text {
+              padding: 24px 0px 0px 24px;
+
+              .partner-text-info {
+                display: flex;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 28px;
+
+                h3 {
+                  margin-right: 5.5px;
+                }
+
+                .partner-profile-position {
+                  &.master {
+                    color: var(--mainPt);
+                  }
+
+                  &.sub {
+                    color: var(--subPt);
+                  }
+
+                  &.nomal {
+                    color: var(--normalPt);
+                  }
+                }
+              }
+
+              .partner-reputation {
+                display: flex;
+                margin-top: 8px;
+                font-size: 14px;
+                color: var(--lightBlack);
+
+                .partner-point-star {
+                  display: flex;
+
+                  .star-point {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 2px;
+                    background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/review_ico_star_small.png")
+                      no-repeat;
+                    background-size: auto 20px;
+                    background-position: 0 0;
+
+                    &.half {
+                      background-position: -40px 0;
+                    }
+
+                    &.full {
+                      background-position: -20px 0;
+                    }
+
+                    &:last-of-type {
+                      margin-right: 0px;
+                    }
+                  }
+                }
+
+                .partner-profile-point-num {
+                  display: flex;
+                  align-items: center;
+                  margin-left: 7px;
+                }
+              }
+
+              .partner-session-text {
+                margin-top: 16px;
+                font-size: 14px;
+                color: var(--themeColor);
+
+                em {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+
+          .partner-profile-wrap-counsel-type {
+            height: 54px;
+            display: flex;
+            justify-content: center;
+
+            .partner-counsel-type {
+              display: flex;
+              align-items: center;
+
+              .partner-counsel-type-img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+              }
+
+              .partner-counsel-type-text {
+                font-size: 16px;
+                line-height: 1.5;
+                margin-right: 20px;
+
+                &.last {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .partner-profile-contents {
+        .profile-contents-wrap-list {
+          width: 616px;
+
+          .content-list {
+            display: flex;
+
+            .content-el {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              width: (100% / 3);
+              height: 56px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              color: #bdbdbd;
+
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                height: 4px;
+                background: #e0e0e0;
+              }
+
+              // 클릭했을때
+              &.is-click {
+                color: var(--themeColor);
+
+                &::after {
+                  background: var(--themeColor);
+                }
+              }
+            }
+          }
+        }
+
+        .profile-content-info {
+          .info-youtube {
+          }
+
+          .info-excellent-act {
+            padding: 40px 24px;
+
+            .excellent-act-headline {
+              height: 28px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+
+            .excellent-act-list {
+              margin-top: 32px;
+              display: flex;
+              justify-content: center;
+
+              .trost-partner {
+                margin-right: 69px;
+
+                .trost-img {
+                  @include act-list-img(0 -76px);
+
+                  // 150회기 안넘을때
+                  &.is-not {
+                    background-position: 0 0;
+                  }
+                }
+
+                .trost-text {
+                  @include act-list-text();
+                }
+              }
+
+              .excellent-partenr {
+                margin-right: 69px;
+
+                .excellent-img {
+                  @include act-list-img(-152px 0);
+
+                  &.is-show {
+                    background-position: -152px -76px;
+                  }
+                }
+
+                .excellent-text {
+                  @include act-list-text();
+                }
+              }
+
+              .month-partner {
+                .month-img {
+                  @include act-list-img(-228px 0);
+
+                  &.is-show {
+                    background-position: -228px -76px;
+                  }
+                }
+
+                .month-text {
+                  @include act-list-text();
+                }
+              }
+            }
+          }
+
+          .info-counsel-header {
+            padding: 40px 24px 24px;
+            border-top: 1px solid #e0e0e0;
+
+            h3 {
+              margin-bottom: 4px;
+              font-size: 20px;
+              font-weight: bold;
+              line-height: 1.4;
+              display: block;
+
+              &::before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-bottom: 4px;
+                background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/ic_quote.png")
+                  no-repeat center;
+                background-size: 20px auto;
+              }
+            }
+
+            p {
+              font-size: 16px;
+              line-height: 1.75;
+              color: var(--lightBlack);
+              white-space: pre-line;
+              word-break: keep-all;
+            }
+          }
+
+          .info-counsel-history {
+            padding: 40px 24px 24px;
+            border-top: 1px solid #e0e0e0;
+
+            h3 {
+              margin-bottom: 4px;
+              font-size: 20px;
+              font-weight: bold;
+              line-height: 1.4;
+            }
+
+            .info-counsel-list {
+              margin-top: 24px;
+              font-size: 16px;
+              line-height: 1.75;
+
+              .partner-qualification {
+                @include info-list(0 0 20px 27px);
+              }
+
+              .partner-education {
+                @include info-list(0 0 20px 27px);
+              }
+
+              .partner-career {
+                @include info-list(0 0 0 27px);
+              }
+            }
+          }
+
+          .info-counsel-story {
+            padding: 40px 24px 24px;
+            border-top: 1px solid #e0e0e0;
+
+            h3 {
+              margin-bottom: 4px;
+              font-size: 20px;
+              font-weight: bold;
+              line-height: 1.4;
+            }
+
+            .q-and-a {
+              padding-top: 32px;
+
+              h4 {
+                margin-bottom: 4px;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.4;
+
+                &::before {
+                  content: "Q.";
+                  margin-right: 4px;
+                  color: var(--themeColor);
+                }
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 1.75;
+                color: var(--lightBlack);
+                white-space: pre-line;
+                word-break: keep-all;
+              }
+            }
+          }
+        }
+
+        .profile-content-reservation {
+          .reservation-text-phone {
+            padding: 40px 0 20px 0;
+
+            .text-phone-title {
+              height: 28px;
+              font-size: 24px;
+              text-align: center;
+              font-weight: bold;
+              color: var(--themeColor);
+            }
+
+            .text-phone-sub-title {
+              margin-top: 16px;
+              height: 28px;
+              font-size: 20px;
+              text-align: center;
+            }
+
+            .text-phone-flow {
+              margin-top: 32px;
+
+              .flow-title {
+                height: 22px;
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              .flow-content-wrap {
+                margin-top: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .flow-one {
+                  @include counsel-flow(76px);
+                }
+
+                .flow-two {
+                  @include counsel-flow(76px);
+                }
+
+                .flow-three {
+                  @include counsel-flow(0);
+                }
+              }
+            }
+          }
+
+          .reservation-meet {
+            padding: 40px 0 20px 0;
+            border-top: 1px solid #e0e0e0;
+
+            .meet-title {
+              height: 28px;
+              font-size: 24px;
+              text-align: center;
+              font-weight: bold;
+              color: var(--themeColor);
+            }
+
+            .meet-sub-title {
+              margin-top: 16px;
+              height: 28px;
+              font-size: 20px;
+              text-align: center;
+            }
+
+            .meet-map {
+              margin-top: 32px;
+
+              .map-title {
+                margin-bottom: 24px;
+                height: 22px;
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              .flow-meet-location {
+                height: 200px;
+              }
+
+              .flow-meet-location-text {
+                margin-top: 24px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: center;
+              }
+            }
+
+            .meet-flow {
+              margin-top: 32px;
+              width: 100%;
+
+              .flow-title {
+                height: 22px;
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              .flow-content-wrap {
+                margin-top: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .flow-one {
+                  @include counsel-flow(39px);
+                }
+
+                .flow-two {
+                  @include counsel-flow(39px);
+                }
+
+                .flow-three {
+                  @include counsel-flow(39px);
+                }
+
+                .flow-four {
+                  @include counsel-flow(0);
+                }
+              }
+            }
+          }
+
+          .reservation-notice {
+            padding-top: 40px; //0 20px 0;
+            border-top: 1px solid #e0e0e0;
+
+            .reservation-title {
+              margin-bottom: 24px;
+              height: 22px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+
+            .reservation-notice-list {
+              margin-top: 24px;
+              font-size: 16px;
+              line-height: 1.75;
+
+              .reservation-list {
+                padding-left: 27px;
+
+                .list-el {
+                  position: relative;
+                  list-style-type: disc;
+                }
+              }
+            }
+          }
+        }
+
+        .profile-content-review {
+          padding: 40px 24px 96px 24px;
+
+          h3 {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+          }
+
+          .review-star-graph {
+            padding: 16px 24px 24px;
+            height: 187px;
+            display: flex;
+            justify-content: space-between;
+
+            .review-star {
+              width: 192px;
+              height: 100%;
+              position: relative;
+
+              .review-star-head {
+                h4 {
+                  font-size: 20px;
+                  line-height: 1.4;
+                  font-weight: bold;
+                }
+
+                span {
+                  display: block;
+                  margin-top: 24px;
+                  font-size: 38px;
+                  line-height: 1.26;
+                  font-weight: bold;
+                }
+              }
+
+              .review-star-list {
+                //display: flex;
+                margin-top: 5px;
+                position: absolute;
+                bottom: 0;
+
+                .star-point {
+                  display: inline-block;
+                  width: 32px;
+                  height: 32px;
+                  margin-right: 8px;
+                  background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/review_ico_star_small.png")
+                    no-repeat;
+                  background-size: auto 32px;
+                  background-position: 0 0;
+
+                  &.half {
+                    background-position: -64px 0;
+                  }
+
+                  &.full {
+                    background-position: -32px 0;
+                  }
+
+                  &:last-of-type {
+                    margin-right: 0px;
+                  }
+                }
+              }
+            }
+
+            .review-graph {
+              width: 286px;
+              height: 100%;
+
+              .review-graph-head {
+                h4 {
+                  font-size: 20px;
+                  line-height: 1.4;
+                  font-weight: bold;
+                }
+              }
+
+              .review-graph-list {
+                display: flex;
+                justify-content: space-around;
+                height: 119px;
+                padding-top: 10px;
+                position: relative;
+
+                .review-graph-el {
+                  width: 15px;
+
+                  .review-graph-height {
+                    height: 90px;
+                    margin-bottom: 5px;
+
+                    &.full {
+                      background: var(--themeColor);
+                    }
+
+                    &.one-fourth {
+                      background: var(--lightBlack);
+                      background-position: 0 0;
+                    }
+                  }
+
+                  .review-graph-num {
+                    font-size: 12px;
+                    color: var(--lightBlack);
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+
+          .review-input {
+            padding: 24px 0;
+            border-bottom: 1px solid #e0e0e0;
+          }
+
+          .review-data {
+            .review-list {
+              .review-content-wrap {
+                padding: 24px 0;
+                border-bottom: 1px solid #e0e0e0;
+
+                .review-content-top {
+                  height: 16px;
+                  display: flex;
+                  justify-content: space-between;
+
+                  .review-star-point {
+                    display: flex;
+
+                    .star-point {
+                      display: inline-block;
+                      width: 16px;
+                      height: 16px;
+                      margin-right: 2px;
+                      background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/review_ico_star_small.png")
+                        no-repeat;
+                      background-size: auto 16px;
+                      background-position: 0 0;
+
+                      &.half {
+                        background-position: -32px 0;
+                      }
+
+                      &.full {
+                        background-position: -16px 0;
+                      }
+
+                      &:last-of-type {
+                        margin-right: 0px;
+                      }
+                    }
+                  }
+
+                  .review-info {
+                    font-size: 14px;
+                    color: var(--lightBlack);
+                  }
+                }
+
+                .review-content-main {
+                  margin-top: 16px;
+                  font-size: 14px;
+
+                  .review-text {
+                    line-height: 1.67;
+                    white-space: pre-line;
+                    word-break: keep-all;
+                  }
+
+                  .review-cate {
+                    margin-top: 16px;
+
+                    h5 {
+                      font-weight: 600;
+                      line-height: 1.67;
+                    }
+
+                    ul {
+                      display: flex;
+                      font-size: 14px;
+                      line-height: 1.71;
+
+                      li {
+                        color: var(--lightBlack);
+                        margin-right: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .partner-profile-aside {
+      .partner-program-notice {
+        width: 304px;
+        //height: 209px;
+        border: 1px solid #e0e0e0;
+        padding: 16px;
+        color: var(--lightBlack);
+        font-size: 14px;
+
+        .notice-contents {
+          h4 {
+            font-weight: bold;
+            height: 20px;
+            margin-bottom: 6px;
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              margin: -2px 4px 0 0;
+              vertical-align: middle;
+              background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/ic_noti.png")
+                no-repeat center;
+              background-size: 20px auto;
+            }
+          }
+
+          p {
+            height: 77px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 1.43;
+          }
+        }
+
+        .btn-apply {
+          height: 56px;
+          width: 100%;
+          margin-top: 16px;
+          background: var(--themeColor);
+          border-radius: 5px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+
+      .partner-program-texttera {
+        margin-top: 24px;
+
+        .texttera-img {
+          position: relative;
+          width: 100%;
+          height: 188px;
+          padding: 32px 16px 16px 16px;
+          background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/img_tt.png")
+            no-repeat center;
+          background-size: cover;
+          color: #fff;
+
+          .texttera-header {
+            display: flex;
+            align-items: center;
+
+            h3 {
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 1.1;
+            }
+
+            button {
+              @include btn-guide(-48px center);
+            }
+          }
+
+          .texttera-content {
+            margin-top: 1px;
+            font-size: 14px;
+            line-height: 1.43;
+          }
+
+          .texttera-link {
+            position: absolute;
+            bottom: 16px;
+            font-size: 12px;
+            line-height: 1.67;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+
+        .price-list {
+          @include price-list();
+        }
+      }
+
+      .partner-program-phone {
+        margin-top: 24px;
+
+        .phone-img {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 188px;
+          padding: 32px 16px 16px 16px;
+          background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/img_vt.png")
+            no-repeat center;
+          background-size: cover;
+
+          .phone-head-content-wrap {
+            position: relative;
+
+            .phone-header {
+              display: flex;
+              align-items: center;
+
+              h3 {
+                font-size: 24px;
+                line-height: 1.1;
+                font-weight: 500;
+              }
+
+              button {
+                @include btn-guide(0 center);
+              }
+            }
+
+            .phone-content {
+              font-size: 14px;
+              margin-top: 5px;
+              display: flex;
+            }
+
+            .phone-link {
+              font-size: 12px;
+              margin-top: 6px;
+              line-height: 1.67;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+
+            .btn-app-install {
+              position: absolute;
+              bottom: 0;
+              width: 160px;
+              height: 40px;
+              background: #fff;
+              border-radius: 5px;
+              font-size: 16px;
+              font-weight: bold;
+              color: var(--themeColor);
+            }
+          }
+
+          .app-install-list {
+            position: relative;
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            cursor: pointer;
+
+            .play-store {
+              margin-top: 5px;
+              width: 83px;
+              height: 28px;
+              background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_store.png")
+                no-repeat;
+              background-size: auto 28px;
+              background-position: 0 0;
+              border-radius: 4px;
+            }
+
+            .app-store {
+              margin-top: 5px;
+              width: 84px;
+              height: 28px;
+              background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/btn_store.png")
+                no-repeat;
+              background-size: auto 28px;
+              background-position: -88px 0;
+              border-radius: 4px;
+            }
+          }
+        }
+
+        .price-list {
+          @include price-list();
+        }
+      }
+
+      .partner-program-meet {
+        margin-top: 24px;
+
+        .meet-img {
+          width: 100%;
+          height: 188px;
+          padding: 32px 16px 16px 16px;
+          background: url("https://d2qrvi4l1nprmf.cloudfront.net/images/service/partner/img_offline_therapy.png")
+            no-repeat center;
+          background-size: cover;
+          color: #fff;
+
+          .meet-header {
+            display: flex;
+            align-items: center;
+
+            h3 {
+              font-size: 24px;
+              line-height: 1.1;
+              font-weight: 500;
+            }
+
+            button {
+              @include btn-guide(-48px center);
+            }
+          }
+
+          .meet-content {
+            display: flex;
+            font-size: 16px;
+            margin-top: 5px;
+          }
+
+          .meet-link {
+            font-size: 12px;
+            margin-top: 6px;
+            line-height: 1.67;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+
+        .price-list {
+          @include price-list();
+        }
+      }
+    }
+  }
+}
